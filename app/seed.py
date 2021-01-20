@@ -3,7 +3,7 @@ import datetime
 
 def seed(db):
     users = [
-        User(username="abcdefghijklmnopqrstuvwxyzabcde"),
+        User(username="abcdefghijklmnopqrstuvwxyzabcd"),
         User(username="kittykattysammy"),
         User(username="xammyyyalex"),
         User(username="olivia_rodrigo_stan"),
@@ -12,7 +12,7 @@ def seed(db):
     ]
 
     posts = [
-        Post(content="i love the alphabet"),
+        Post(content="i love the alphabet" ),
         Post(content="wow ur so cool"),
         Post(content="lmao do you think ur edgy"),
         Post(content="RED LIGHTS STOP SIGNS I STILL SEE YOUR FACE IN THE WHITE CARS FRONT YARDS"),
