@@ -1,3 +1,4 @@
+<!--
 {% extends 'layout.html' %}
 
 {% block head %}
@@ -6,8 +7,45 @@
 
 {% block content %}
 <div class="home">
-    
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+          <img src="https://graphiccave.com/wp-content/uploads/2015/04/Yellow-Bird-Illustration.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+          <b>Twitter-ish</b>
+        </a>
+      </nav>
+    <div class="tweets_display" style="color:black; margin:2vw">
+        <h5>Posts</h5>
+        {% for post in posts %}
+            <h5><a href="/{{post.id}}"></a></h5>
+            <p> {{ post.content }} </p>
+            <p>User: {{ post.users }}</p>
+        {% endfor %}
+    </div>
     
 
+</div>
+{% endblock %}
+
+-->
+{% extends ‘layout.html’ %}
+{% block head %}
+<title>Home Page</title>
+{% endblock %}
+{% block content %}
+<div class=“home”>
+    <h1>Posts</h1>
+    <!-- <div class=“tasks_flex”> -->
+        {% for post in posts %}
+            <!--<div class=“tasks_card”> -->
+                 <h5>
+                    <a href=“/{{post.id}}“>
+                    </a>
+                </h5>
+                <p>{{ post.content }}</p>
+                <p>User: {{ post.users }}</p>
+                <!-- Display more information for tasks here -->
+            <!--</div>-->
+        {% endfor %}
+    <!--</div>-->
 </div>
 {% endblock %}
