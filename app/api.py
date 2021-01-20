@@ -5,4 +5,6 @@ from models import User, Post
 # GET /
 @app.route('/', methods=['GET'])
 def get_index():
-    return render_template('index.html')
+    data = Post.query.all()
+    all_posts = [item.serialize() for item in data]
+    return render_template('index.html', posts=all_posts)

@@ -9,7 +9,10 @@ class User(db.Model):
     posts = db.relationship("Post", back_populates="user")
 
     def serialize(self):
-        return {}
+        return {
+            "id": self.id,
+            "username": self.username
+        }
 
 
 class Post(db.Model):
@@ -21,4 +24,7 @@ class Post(db.Model):
     user = db.relationship("User", back_populates="posts")
 
     def serialize(self):
-        return {}
+        return {
+            "id":self.id,
+            "content":self.content
+        }
