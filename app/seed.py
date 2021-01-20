@@ -3,11 +3,11 @@ import datetime
 
 def seed(db):
     users = [
-        User(id=1, name="Zac Efron"),
-        User(id=2, name="Rock Lee"),
-        User(id=3, name="Casey Leur"),
-        User(id=4, name="Jasmine Keen"),
-        User(id=5, name="John Smith"),
+        User(id=1, username="Zac Efron"),
+        User(id=2, username="Rock Lee"),
+        User(id=3, username="Casey Leur"),
+        User(id=4, username="Jasmine Keen"),
+        User(id=5, username="John Smith"),
     ]
 
     posts = [
