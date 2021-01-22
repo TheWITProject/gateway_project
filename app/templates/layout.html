@@ -1,12 +1,18 @@
-
 {% extends 'base.html' %}
 
 {% block layout %}
-<div class="layout" style="font-family: 'Roboto Mono', monospace; color:white">
-
+<div class="layout">
+    
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            🦉 Twitter-ish
+          </a>
+        </div>
+      </nav>
+    
     <div class="content">
         {% block content %}{% endblock %}
     </div>
-
 </div>
 {% endblock %}
