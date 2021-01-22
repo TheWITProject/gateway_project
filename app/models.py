@@ -29,5 +29,6 @@ class Post(db.Model):
         return {
             "id": self.id,
             "content": self.content,
-            "user_id": self.user_id
+            "user_id": self.user_id,
+            "users": self.users.username
         }
