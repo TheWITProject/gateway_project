@@ -6,8 +6,17 @@
 
 {% block content %}
 <div class="home">
-    
-    
+    <h1>Posts</h1>
+    <div class ="posts_flex">
+        {% for post in posts %}
+            <!-- <h5>
+                <a href="/{{post.id}}"></a>
+            </h5>  -->  <!--Saving this code for later when we add links to user profiles -->
+            <p>User: {{ post.users }}</p>
+            <p>{{ post.content }}</p>
+                
 
+        {% endfor %}
+    </div>
 </div>
 {% endblock %}

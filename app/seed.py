@@ -11,7 +11,7 @@ def seed(db):
     ]
 
     posts = [
-        Post(id=1, content="Just wrappede up a cereal fight with my mom and dad. What a night.", user_id=1),
+        Post(id=1, content="Just wrapped up a cereal fight with my mom and dad. What a night.", user_id=1),
         Post(id=3, content="Captain Olivia Benson off duty like -", user_id=3),
         Post(id=4, content="Can you just not step on our gowns?", user_id=4),
         Post(id=5, content="A happy meal.", user_id=5),
