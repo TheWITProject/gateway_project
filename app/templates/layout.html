@@ -2,12 +2,17 @@
 
 {% block layout %}
 <div class="layout">
-
-    <h1>Twitter-ish</h1>
-
+    
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            🦉 Twitter-ish
+          </a>
+        </div>
+      </nav>
+    
     <div class="content">
         {% block content %}{% endblock %}
     </div>
-
 </div>
 {% endblock %}
