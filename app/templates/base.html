@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     {% block head %}{% endblock %}
 </head>
+<style>
+.post{
+	width: 300px;
+	border: 15px solid green;
+	padding: 50px;
+	margin: auto;
+}
+</style>
 <body>
     {% block layout %}{% endblock %}
 </body>
