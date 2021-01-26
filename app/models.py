@@ -13,7 +13,6 @@ class User(db.Model):
             "id": self.id,
             "username": self.username
 
-
         }
 
 
@@ -30,7 +29,12 @@ class Post(db.Model):
         return {
             "id": self.id,
             "content": self.content,
+
+            "user_id": self.user_id,
+            "user": self.users.username
+
             "user_id": self.user_id
+
 
 
         }

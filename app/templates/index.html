@@ -6,7 +6,18 @@
 
 {% block content %}
 <div class="home">
-    
+	<!--	<h2>All posts</h2> -->
+	<!--	<div class="post"> -->
+	{% for post in posts %}
+	<div class="post">
+
+		<p><strong>&#64;{{post.user}}</strong></p>
+
+	<p>{{post.content}}</p>
+	</div>
+	<p>  </p>
+	<p>  </p>
+	{% endfor %}
     
 
 </div>
