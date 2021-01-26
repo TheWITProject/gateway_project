@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<title>Twitterish</title>
+{% endblock %}
+
+{% block content %}
+<div class="posts">
+    {% for post in posts %}
+        <p>{{post.content}}</p>
+        
+        {% for user in post.user %}
+            <h3>{{user.username}}</h3>
+            
+
+            
+        {% endfor %}
+
+    {% endfor %}
+        
+
+    
+</div>
+{% endblock %}

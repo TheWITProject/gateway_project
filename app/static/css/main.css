@@ -1,0 +1,39 @@
+
+.header {
+    color: white;
+    background-color:black;
+    text-align: left;
+    border-radius: 4px;
+
+}
+
+.post-box {
+    min-height: 150px;
+    height: auto;
+  
+    border-radius: 25px;
+    background-color:#F5F5F5;
+    border: 2px solid pink;
+    padding: 20px;
+    width: 700px;
+    
+    margin: auto;
+    overflow: hidden;
+}
+
+hr.solid {
+    border-top: 2px solid black;
+    
+}
+
+a:link {
+    color: rgba(100, 96, 96, 0.925);  
+}
+
+a:visited {
+    color: rgba(100, 96, 96, 0.925);
+  }
+
+  a:hover {
+    color: hotpink;
+  }
