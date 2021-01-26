@@ -1,13 +1,28 @@
 {% extends 'layout.html' %}
 
 {% block head %}
-<title>Home Page</title>
+<title>Posts Page</title>
 {% endblock %}
 
 {% block content %}
-<div class="home">
-    
-    
-
+<!--<div class="home">
+    <h1>Hello World!</h1>
+    <h3>Welcome to Twitter-ish!</h3>
+</div>-->
+<div class="posts">
+    <h1>Tweets-ish</h1>
+    {% for post in posts %}
+            <div class="posts_card">
+                <p class="card-title">
+                    <b> @
+                        <a href="/{{post.id}}">
+                            {{ post.user }}
+                        </a>
+                    </b>
+                </p>
+                <p>{{ post.content }}</p>
+            </div>
+    {% endfor %}
 </div>
+
 {% endblock %}

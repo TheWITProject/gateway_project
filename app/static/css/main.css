@@ -1,0 +1,44 @@
+.layout{
+    display: inline;
+    padding: 20 px;
+}
+
+.posts{
+    margin: 15px;
+
+}
+
+.posts_card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 80%; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px 16px; 
+}
+
+.posts_card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-title{
+    border-color: #d1b3ff;
+    border-width: 5px; 
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.navbar{
+    width: 100%;
+    background-color: #d1b3ff; 
+}
+
+.navbar-header{
+    font-size: 25px;
+    font-weight: 500;
+    display: inline;
+    float: left;
+    position: static;
+}

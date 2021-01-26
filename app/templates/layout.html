@@ -1,13 +1,27 @@
 {% extends 'base.html' %}
 
 {% block layout %}
-<div class="layout">
+    <div class="layout">
 
-    <h1>Twitter-ish</h1>
+        <nav class="navbar">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="/">Twitter-ish</a>
+            </div>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Tweets-ish</a></li>
+                <li><a href="#">Profile</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+            </div>
+          </nav>
 
-    <div class="content">
-        {% block content %}{% endblock %}
+        <div class="content">
+            {% block content %}{% endblock %}
+        </div>
+
     </div>
-
-</div>
 {% endblock %}
