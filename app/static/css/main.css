@@ -5,7 +5,6 @@
 
 .posts{
     margin: 15px;
-
 }
 
 .posts_card{
@@ -21,6 +20,24 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+.users{
+    margin: 15px;
+
+}
+
+.users_card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 80%; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px 16px; 
+}
+
+.users_card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
 .card-title{
     border-color: #d1b3ff;
     border-width: 5px; 
@@ -30,9 +47,14 @@
     padding-right: 10px;
 }
 
+.character-count {
+    text-align: right; 
+}
+
 .navbar{
     width: 100%;
     background-color: #d1b3ff; 
+    padding-top: 50px;
 }
 
 .navbar-header{

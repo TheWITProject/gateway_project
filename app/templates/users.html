@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<title>User Page</title>
+{% endblock %}
+
+{% block content %}
+<div class="users">
+    <h1>Profile-ish</h1>
+    {% for user in users %}
+        <h3>@ {{ user.username }}</h3>
+        <div class="users_card">
+            {% for post in user.posts %}
+            <p class="card-title">
+                <b> @
+                    <a href="/users/{{user.id}}">
+                        {{ user.username }}
+                    </a>
+                </b>
+            </p>
+            <ul id="content">
+                <p>
+                    <a>
+                        {{ post.content }}
+                    </a>
+                </p>
+                <b>
+                    <p>
+                        <a>
+                            {{ post.content|length }}/280 characters
+                        </a>
+                    </p>
+                </b>
+                <hr style="border: 10px;">
+            </ul>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
