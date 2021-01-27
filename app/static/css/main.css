@@ -1,0 +1,11 @@
+/*Index.html Layout*/
+
+.posts {
+    width: 90%;
+    margin: 30px auto 30px;
+    border: 1px solid blue;
+}
+
+.layout h1 {
+    color: red;
+}
