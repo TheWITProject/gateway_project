@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+
+    {% for user in users %}
+    <div class="post-box">
+
+    
+         <p>{{user.posts}}</p>
+        
+        
+    </div>
+    
+    <br>
+
+      
+
+    {% endfor %}
+        
+
+    
+
+{% endblock %}
