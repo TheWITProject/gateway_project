@@ -6,7 +6,7 @@
     {% for post in posts %}
     <div class="post-box">
     
-        <a href={{post.user}}>{{post.user}}</a>
+        <a href=users/{{post.user_id}}>{{post.user}}</a>
         
         <hr class="solid"></hr>
         <p>{{post.content}}</p>
