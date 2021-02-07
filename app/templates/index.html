@@ -5,9 +5,14 @@
 {% endblock %}
 
 {% block content %}
-<div class="home">
-    
-    
-
-</div>
+        {% for post in posts %}
+                <!-- <h5>
+                    a href="/{{post.id}}">
+                    </a>
+                </h5>-->
+		<div class="center">
+                	<p>User: {{ post.users }}</p>
+                	<p>{{ post.content }}</p>
+            	</div>
+        {% endfor %}
 {% endblock %}
